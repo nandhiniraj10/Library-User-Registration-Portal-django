@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+<body>
+<form action="home2" autocomplete="off" method="POST">
+{% csrf_token %}
+<div>
+    <label for="name">name</label>
+    <input type="text" id="name" name="name">
+</div>
+<div>
+    <label for="contact_no">contact_no</label>
+    <input type="tel" id="contact_no" name="contact_no">
+</div>
+<div>
+    <label for="Address">address</label>
+    <input type="text" id="address" name="address">
+</div>
+<div>
+<label for="books">books</label>
+ <select name="books" id="books">
+    <option value="wf">Wings Of Fire</option>
+    <option value="hh">html</option>
+    <option value="py">python</option>
+
+ </select>
+</div>
+
+<div>
+    <label for="amount">Amount</label>
+    <input type="text" id="amount" name="amount">
+</div>
+<div>
+    <label for="noofbook">No_ofbooks:</label>
+    <input type="text" name="noofbook">
+</div>
+<div>
+    <button type="submit">Submit</button>
+</div>
+
+</form>
+    
+</body>
+</html>
